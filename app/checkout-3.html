@@ -1,0 +1,154 @@
+---
+title: checkout-3
+layout: ./app/layout.ejs
+engine: ejs
+current: checkout-3
+---
+
+<section class="container overflow-hidden pt-8 mb-8 mb-md-10">
+  <div class="row g-0">
+    <div class="col-12 col-md-12 col-lg-8">
+      <div class="row g-0 timeline-section position-relative">
+        <div class="col-3">
+          <div class="timeline-checkPointer position-relative d-flex justify-content-center">
+            <p class="fs-8 fs-md-7 pt-4 mb-0">確認訂單</p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="timeline-checkPointer position-relative d-flex justify-content-center">
+            <p class="fs-8 fs-md-7 pt-4 mb-0">填寫訂購資訊</p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="timeline-checkPointer position-relative d-flex justify-content-center">
+            <p class="fs-8 fs-md-7 pt-4 mb-0">填寫付款資訊</p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="timeline-pointer position-relative d-flex justify-content-center">
+            <p class="fs-8 fs-md-7 pt-4 mb-0">完成訂購</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container overflow-hidden mb-13">
+  <div class="row">
+    <div class="col-12 col-lg-8 order-1 order-lg-0">
+      <div class="row align-items-center mb-8">
+        <div class="col col-md-3">
+          <div class="ratio ratio-2x1">
+            <img class="img-object-cover" src="./assets/images/product1.jpg" alt="product1">
+          </div>
+        </div>
+        <div class="col col-md-3">
+          <h5 class="fs-7 fw-bold mb-1">2020 台味設計展</h5>
+          <p class="mb-1">01 JUN — 31 OCT</p>
+          <div class="d-flex justify-content-between">
+            <small class="fs-7 text-dark">
+              全票
+              <span class="fs-6 fw-bold text-black mb-0 d-md-none">1</span>
+            </small>
+            <p class="fs-6 fw-bold mb-0 d-block d-md-none">NT$350</p>
+          </div>
+        </div>
+        <div class="col-md-3 d-none d-md-block">
+          <div class="w-100 d-flex justify-content-between align-items-center">
+            <p class="fs-6 fw-bold mb-0">NT$350</p>
+            <p class="fs-6 fw-bold mb-0">1</p>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center mb-8">
+        <div class="col col-md-3">
+          <div class="ratio ratio-2x1">
+            <img class="img-object-cover" src="./assets/images/product2.jpg" alt="product2">
+          </div>
+        </div>
+        <div class="col col-md-3">
+          <h5 class="fs-7 fw-bold mb-1">No.22 線上設計展</h5>
+          <p class="mb-1">01 JUN — 31 OCT</p>
+          <div class="d-flex justify-content-between">
+            <small class="fs-7 text-dark">
+              全票
+              <span class="fs-6 fw-bold text-black mb-0 d-md-none">1</span>
+            </small>
+            <p class="fs-6 fw-bold mb-0 d-block d-md-none">NT$350</p>
+          </div>
+        </div>
+        <div class="col-md-3 d-none d-md-block">
+          <div class="w-100 d-flex justify-content-between align-items-center">
+            <p class="fs-6 fw-bold mb-0">NT$350</p>
+            <p class="fs-6 fw-bold mb-0">1</p>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center mb-16 mb-md-8">
+        <div class="col col-md-3">
+          <div class="ratio ratio-2x1">
+            <img class="img-object-cover" src="./assets/images/product3.jpg" alt="product3">
+          </div>
+        </div>
+        <div class="col col-md-3">
+          <h5 class="fs-7 fw-bold mb-1">高雄設計節</h5>
+          <p class="mb-1">01 JUN — 31 OCT</p>
+          <div class="d-flex justify-content-between">
+            <small class="fs-7 text-dark">
+              全票
+              <span class="fs-6 fw-bold text-black mb-0 d-md-none">1</span>
+            </small>
+            <p class="fs-6 fw-bold mb-0 d-block d-md-none">NT$350</p>
+          </div>
+        </div>
+        <div class="col-md-3 d-none d-md-block">
+          <div class="w-100 d-flex justify-content-between align-items-center">
+            <p class="fs-6 fw-bold mb-0">NT$350</p>
+            <p class="fs-6 fw-bold mb-0">1</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-4 order-0 order-lg-1">
+      <h4 class="fs-6 fw-bold mb-6 mb-md-8">付款資訊</h4>
+      <form action="./checkout-3.html" method="post">
+        <div class="mb-8">
+          <label for="account" class="form-label">信用卡帳號</label>
+          <input type="text" class="form-control" id="account" placeholder="Xxxx-xxxx-xxxx-xxxx">
+        </div>
+        <div class="mb-8">
+          <label for="date" class="form-label">有效日期</label>
+          <input type="text" class="form-control" id="date" placeholder="(MM/YY)">
+        </div>
+        <div class="mb-18 mb-md-25">
+          <label for="discount" class="form-label">安全碼</label>
+          <input type="text" class="form-control" id="discount" placeholder="***">
+        </div>
+        <div class="d-flex justify-content-between mb-1 mb-md-2">
+          <p class="fs-7 fw-bolder mb-0">小計</p>
+          <p class="fs-7 mb-0">NT$1050</p>
+        </div>
+        <div class="d-flex justify-content-between mb-1 mb-md-2">
+          <p class="fs-7 fw-bolder mb-0">折扣</p>
+          <p class="fs-7 mb-0">-NT$50</p>
+        </div>
+        <div class="d-flex justify-content-between mb-9 mb-md-4">
+          <p class="fs-6 fw-bolder mb-0">總金額</p>
+          <p class="fs-6 fw-bolder mb-0">NT$1000</p>
+        </div>
+      </form>
+    </div>
+    <div class="col-6 col-md-4 col-lg-1 me-auto order-2">
+      <div class="d-grid">
+        <a class="btn btn-outline-primary py-3" href="./checkout-2.html" role="button">返回</a>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 order-3">
+      <div class="d-grid">
+        <a class="btn btn-secondary py-3" href="./checkout-4.html" role="button">下一步</a>
+      </div>
+    </div>
+  </div>
+</section>
